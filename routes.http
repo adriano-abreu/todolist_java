@@ -1,0 +1,38 @@
+POST http://127.0.0.1:8080/users/
+Content-Type: application/json
+
+{
+  "name": "Adriano",
+  "username": "cruel",
+  "password": "123456"
+}
+
+###
+
+POST http://127.0.0.1:8080/tasks/
+Authorization: Basic cruel:123456
+Content-Type: application/json
+
+{
+  "title": "Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1Loren1",
+  "description": "Aulas de programação",
+  "startAt": "2023-10-25T16:15:30",
+  "endAt": "2023-10-25T16:15:30",
+  "prioriry": "HIGH"
+}
+
+###
+
+GET http://127.0.0.1:8080/tasks/
+Authorization: Basic cruel:123456
+
+###
+
+
+PUT http://127.0.0.1:8080/tasks/2bc4513d-42ed-4fab-9c2b-079fe5693371
+Authorization: Basic cruel:123456
+Content-Type: application/json
+
+{
+  "title": "Loren3"
+}
